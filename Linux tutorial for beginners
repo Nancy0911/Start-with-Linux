@@ -1,1 +1,155 @@
-hgjgk
+# Linux Introduction
+- Linux is a community of open-source Unix like operating systems that are based on the Linux Kernel.
+- It was initially released by Linus Torvalds on September 17, 1991. 
+- It is a free and open-source operating system and the source code can be modified and distributed to anyone commercially or noncommercially under the GNU General Public License.
+- to open Linux terminal or shell - press Ctrl+Alt+T in Ubuntu, or press Alt+F2,
+- to execute a command by pressing the 'ENTER' key.
+
+# Linux Basic Commands
+
+# to display the location of the current working directory
+$ pwd
+
+# to display the list of content of a directory
+$ ls
+
+# to change the current directory
+$ cd directory_name
+
+# to create a new directory
+$ mkdir new_directory
+
+# to delete a directory
+$ rmdir new_directory
+
+# to create empty file
+$ touch file.txt
+
+# to create a file
+$ cat> file.txt
+
+# to dispaly the content of file
+$ cat file.txt
+
+# to remove a file
+$ rm file.txt
+
+# to copy a file in the same directory
+$ cp existing file name new file name
+
+# to copy a file in a different directory
+$ cp existing file name directory name
+
+# to move a file or directory from one location to another location.
+$ mv file name directory path
+
+# to rename a file 
+$ rename  
+
+# to convert all the text files into pdf files 
+$ rename 's/\.txt$/\.pdf/' *.txt
+
+# to display the header of a file
+$ head file.txt
+
+# to display the footer of a file
+$ tail file.txt
+
+# to dispaly file content in reverse order
+$ tac file.txt
+
+# to display the file content, in case of larger files it displays screenfil output at a time.
+$ more file.txt
+
+# to dispaly the content of a file\
+$ less file.txt
+
+# to allow access of the Linux shell to another user
+$ su username
+
+# to dispaly the user ID (UID) and group ID (GID)
+$ id
+
+# to add a user on a Linux server
+$ useradd username
+
+# to create and change the password for a user
+$ passwd username
+
+# to create a user group
+$ groupadd groupname
+
+# to select a specific column of a file (The '-d' is used as a delimiter, it can be space (''), a slash (/), a hyphen (-), or anything else. And, the '-f' is used to specify a column number)
+$ cut -d(delimiter) -f(column number)
+
+# to search the content from a file and used filter in a Linux system.
+$ file.txt | grep content
+
+# to compare two files or streams
+$ comm file1.txt file2.txt
+
+# to display line of text/string that are passed as an argument
+$ echo file.txt
+
+# to edit files using a regular expression
+$ sed 's/oldword/newword/'
+
+# to change the case in a file 
+$ cat file.txt | tr 'nancy' 'NANCY'
+
+# to form a sorted list in which every word will occur only once
+$ sort file.txt | uniq
+
+#  to count the lines, words, and characters in a file
+$ wc file.txt
+
+# to display the content of a file in hexadecimal format
+$ od -b file.txt
+
+# to display the content of a file in octa format
+$ od -t x1 file.txt
+
+# to display the content of a file in ASCII character format
+$ od -c file.txt
+
+# to sort file in alphabetical order
+$ sort file.txt
+
+# to zip a file
+$ zip file.txt file1.txt > new.txt
+
+# to unzip a file
+$ unzip new.txt
+
+# to find a particular file within a directory
+$ find -name "*.pdf"
+
+# to search a file by file name
+$ locate file.txt
+
+# to display date, time, time zone, and more
+$ date
+
+# to display the current month's calendar with the current date highlighted.
+$ cal
+
+# to hold the terminal by the specified amount of time. By default, it takes time in seconds
+$ sleep time in seconds
+
+# to display the time to execute a command
+$ time
+
+# to display the compressed files
+$ zcat file.txt
+
+# to display the disk space used in the file system
+$ df
+
+# to connect an external device file system to the system's file system
+$ mount -t type device directory
+
+# to exit from the current shell
+$ exit
+
+# to clear the terminal screen
+$ clear
